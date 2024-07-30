@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="checkweather">
+        <div class="search-bar">
+            <input type="number" id="zip_code" placeholder="Enter Zip Code" aria-label="Enter zip code">
+            <button id="searchBtn" aria-label="Search weather by zip code">Search</button>
+        </div>
+        <div class="weather-card">
+            <div class="weather-info">
+                <div class="weather-icon">
+                    <img id="icon" src="{{ url_for('static', filename='images/weathericon.png') }}" alt="Weather Icon">
+                </div>
+                <div class="temperature">
+                    <span id="temp">--°C</span>
+                    <button id="toggleTemp" class="round-button">°F</button>
+                    <span id="city-name">City Name</span>
+                </div>
+                <div class="details">  
+                    <div id="description">--</div>
+                    <div id="humidity">--% Humidity</div>
+                    <div id="wind-speed">-- km/h Wind Speed</div>
+                </div>
+            </div>
+        </div>
+        <button id="logoutBtn" class="logout-button">Logout</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #38add7;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background-color: #7b89c4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px;
+}
+
+.container h1, .container p {
+    color: white;
+}
+
+.container input[type="text"],
+.container input[type="email"],
+.container input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    justify-content: start; 
+    margin-top: 10px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 5px; 
+}
+
+.checkbox-group label {
+    color: white;
+    margin-left: 5px; 
+    display: block;
+    cursor: pointer;
+    text-align: left; 
+}
+
+button {
+    background-color: #00bfff;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.login-link {
+    color: white;
+    margin-top: 12px;
+}
+
+.flashes {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(255, 0, 0, 0.6);
+    margin-bottom: 10px;
+}

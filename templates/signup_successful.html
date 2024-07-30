@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Successful Sign Up - Weather App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style_signup.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather App</h1>
+        <div class="success-message">
+            <h2>Sign Up Successful!</h2>
+            <p>Welcome to Weather App! Your account has been successfully created.</p>
+            <p>We're excited to help you stay safe and informed about the weather.</p>
+        </div>
+        <div class="actions">
+            <a href="{{ url_for('login') }}" class="button">Login</a>
+        </div>
+    </div>
+</body>
+</html>
